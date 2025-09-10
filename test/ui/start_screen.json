@@ -1,0 +1,28 @@
+{
+    "namespace": "start",
+    "test_button": {
+        "type": "label",
+        "text": "",
+        "color": "#FFFFFF",
+        "font_size": "normal",
+        "font_type": "default",
+        "shadow": false,
+        "line_padding": 0.0,
+        "text_alignment": "center",
+        "enable_profanity_filter": true,
+        "localize": false,
+        "size": [
+            100,
+            20
+        ],
+        "offset": [
+            0,
+            0
+        ],
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "layer": 1,
+        "visible": true,
+        "enabled": true
+    }
+}

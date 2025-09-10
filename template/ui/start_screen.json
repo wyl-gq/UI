@@ -1,0 +1,14 @@
+{
+    "namespace": "start",
+    
+    "template": {
+        "type": "image",
+        "texture": "textures/ui/template.png",
+        "layer": 1,
+        "size": [1, 1],
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "offset": [1, 1],
+        "alpha": 1
+    }
+}
