@@ -1,0 +1,366 @@
+{
+  "label": {
+    "type": "label",                    "//": "组件类型: 标签,用于显示文本",
+    "text": "",                         "//": "显示文本内容,支持§颜色代码和\\n换行",
+    "color": "#FFFFFF",                 "//": "文本颜色,支持颜色名称或RGB数组",
+    "font_size": "normal",              "//": "字体大小: small/normal/large/extra_large",
+    "font_type": "default",             "//": "字体类型: default/rune/MinecraftTen/unicode等",
+    "shadow": false,                    "//": "是否显示文字阴影",
+    "line_padding": 0.0,                "//": "行间距",
+    "text_alignment": "center",         "//": "文本对齐方式: left/center/right",
+    "enable_profanity_filter": true,    "//": "是否启用敏感词过滤",
+    "localize": false,                  "//": "是否启用.lang文件翻译",
+    "size": [100, 20],                  "//": "控件尺寸[宽,高]",
+    "offset": [0, 0],                   "//": "位置偏移量[x,y]",
+    "anchor_from": "center",            "//": "锚点位置: top_left/top_center/top_right/center_left/center/center_right/bottom_left/bottom_center/bottom_right",
+    "anchor_to": "center",              "//": "对齐位置: 选项同anchor_from",
+    "layer": 1,                         "//": "渲染层级,数字越大越在上层",
+    "visible": true,                    "//": "是否可见",
+    "enabled": true,                    "//": "是否启用",
+
+                                        "//": "基本文本标签组件,用于显示静态或动态文本内容"
+  },
+  
+  "image": {
+    "type": "image",                    "//": "组件类型: 图片,用于显示纹理",
+    "texture": "",                      "//": "纹理路径,如textures/ui/example",
+    "color": "#FFFFFF",                 "//": "图像着色颜色",
+    "fill": false,                      "//": "是否填充控件区域",
+    "tiled": false,                     "//": "是否平铺纹理: false/true/x/y/xy/yx",
+    "uv": [0, 0],                       "//": "纹理映射起始位置[x,y]",
+    "uv_size": [0, 0],                  "//": "纹理映射区域大小[宽,高]",
+    "nineslice_size": 0,                "//": "九宫格切片大小: 0/数字/[x,y]/[x1,y1,x2,y2]",
+    "keep_ratio": true,                 "//": "是否保持宽高比",
+    "size": [32, 32],                   "//": "显示尺寸[宽,高]",
+    "offset": [0, 0],                   "//": "位置偏移[x,y]",
+    "anchor_from": "center",            "//": "锚点位置",
+    "anchor_to": "center",              "//": "对齐位置",
+    "layer": 1,                         "//": "渲染层级",
+    "visible": true,                    "//": "是否可见",
+
+    "//": "图像显示组件,支持静态图片和动画序列"
+  },
+  
+  "button": {
+    "type": "button",                   "//": "组件类型: 按钮,交互元素",
+    "default_control": "default",       "//": "默认状态显示的子控件",
+    "hover_control": "hover",           "//": "悬停状态显示的子控件",
+    "pressed_control": "pressed",       "//": "按下状态显示的子控件",
+    "locked_control": "locked",         "//": "禁用状态显示的子控件",
+    "size": [100, 30],                  "//": "按钮尺寸[宽,高]",
+    "offset": [0, 0],                   "//": "位置偏移[x,y]",
+    "anchor_from": "center",            "//": "锚点位置",
+    "anchor_to": "center",              "//": "对齐位置",
+    "layer": 1,                         "//": "渲染层级",
+    "visible": true,                    "//": "是否可见",
+    "enabled": true,                    "//": "是否启用",
+            
+    "//": "可点击按钮组件,支持多种状态和事件映射"
+  },
+  
+  "panel": {
+    "type": "panel",                    "//": "组件类型: 面板,容器组件",
+    "size": [200, 200],                 "//": "面板尺寸[宽,高]",
+    "offset": [0, 0],                   "//": "位置偏移[x,y]",
+    "anchor_from": "center",            "//": "锚点位置",
+    "anchor_to": "center",              "//": "对齐位置",
+    "layer": 0,                         "//": "渲染层级",
+    "visible": true,                    "//": "是否可见",
+    "clipping": false,                  "//": "是否裁剪子元素",
+            
+    "//": "基础容器组件,用于组织和布局其他UI元素"
+  },
+  
+  "stack_panel": {
+    "type": "stack_panel",              "//": "组件类型: 堆叠面板",
+    "orientation": "vertical",          "//": "排列方向: vertical/horizontal",
+    "spacing": 0,                       "//": "子元素间距",
+    "size": [200, 200],                 "//": "面板尺寸[宽,高]",
+    "offset": [0, 0],                   "//": "位置偏移[x,y]",
+    "anchor_from": "center",            "//": "锚点位置",
+    "anchor_to": "center",              "//": "对齐位置",
+    "layer": 0,                         "//": "渲染层级",
+    "visible": true,                    "//": "是否可见",
+            
+    "//": "线性布局容器,子元素按指定方向排列"
+  },
+  
+  "input_panel": {
+    "type": "input_panel",              "//": "组件类型: 输入面板",
+    "prevent_touch_input": false,       "//": "是否屏蔽触摸输入",
+    "prevent_mouse_input": false,       "//": "是否屏蔽鼠标输入",
+    "prevent_controller_input": false,  "//": "是否屏蔽控制器输入",
+    "gesture_tracking_button": "",      "//": "手势跟踪按钮ID",
+    "size": [200, 200],                 "//": "面板尺寸[宽,高]",
+    "offset": [0, 0],                   "//": "位置偏移[x,y]",
+    "anchor_from": "center",            "//": "锚点位置",
+    "anchor_to": "center",              "//": "对齐位置",
+    "layer": 0,                         "//": "渲染层级",
+    "visible": true,                    "//": "是否可见",
+            
+    "//": "专用输入处理容器,可屏蔽特定输入类型"
+  },
+  
+  "collection_panel": {
+    "type": "collection_panel",         "//": "组件类型: 集合面板",
+    "item_template": "label",           "//": "子项模板类型",
+    "item_count": 0,                    "//": "子项数量",
+    "orientation": "vertical",          "//": "排列方向",
+    "size": [200, 200],                 "//": "面板尺寸[宽,高]",
+    "offset": [0, 0],                   "//": "位置偏移[x,y]",
+    "anchor_from": "center",            "//": "锚点位置",
+    "anchor_to": "center",              "//": "对齐位置",
+    "layer": 0,                         "//": "渲染层级",
+    "visible": true,                    "//": "是否可见",
+                                        
+    "//": "动态内容容器,基于模板生成多个相似项"
+  },
+  
+  "toggle": {
+    "type": "toggle",                   "//": "组件类型: 开关",
+    "toggle_name": "",                  "//": "开关标识名",
+    "radio_toggle_group": false,        "//": "是否启用单选组",
+    "default_state": false,             "//": "默认状态",
+    "size": [60, 30],                   "//": "开关尺寸[宽,高]",
+    "offset": [0, 0],                   "//": "位置偏移[x,y]",
+    "anchor_from": "center",            "//": "锚点位置",
+    "anchor_to": "center",              "//": "对齐位置",
+    "layer": 1,                         "//": "渲染层级",
+    "visible": true,                    "//": "是否可见",
+    "enabled": true,                    "//": "是否启用",
+                                        
+    "//": "状态切换组件,支持开/关两种状态"
+  },
+  
+  "dropdown": {
+    "type": "dropdown",                 "//": "组件类型: 下拉菜单",
+    "options": [],                      "//": "选项列表",
+    "selected_index": 0,                "//": "当前选中项",
+    "max_visible_items": 5,             "//": "最大可见项数",
+    "size": [120, 30],                  "//": "控件尺寸[宽,高]",
+    "offset": [0, 0],                   "//": "位置偏移[x,y]",
+    "anchor_from": "center",            "//": "锚点位置",
+    "anchor_to": "center",              "//": "对齐位置",
+    "layer": 1,                         "//": "渲染层级",
+    "visible": true,                    "//": "是否可见",
+    "enabled": true,                    "//": "是否启用",
+                                        
+    "//": "下拉选择组件,提供多个选项供用户选择"
+  },
+  
+  "slider": {
+    "type": "slider",                   "//": "组件类型: 滑块",
+    "min_value": 0.0,                   "//": "最小值",
+    "max_value": 1.0,                   "//": "最大值",
+    "default_value": 0.5,               "//": "默认值",
+    "step_size": 0.01,                  "//": "步进值",
+    "orientation": "horizontal",        "//": "方向: horizontal/vertical",
+    "size": [150, 20],                  "//": "滑块尺寸[宽,高]",
+    "offset": [0, 0],                   "//": "位置偏移[x,y]",
+    "anchor_from": "center",            "//": "锚点位置",
+    "anchor_to": "center",              "//": "对齐位置",
+    "layer": 1,                         "//": "渲染层级",
+    "visible": true,                    "//": "是否可见",
+    "enabled": true,                    "//": "是否启用",
+                                        
+    "//": "范围选择组件,允许在指定范围内选择数值"
+  },
+  
+  "slider_box": {
+    "type": "slider_box",               "//": "组件类型: 滑块输入框",
+    "min_value": 0,                     "//": "最小值",
+    "max_value": 100,                   "//": "最大值",
+    "default_value": 50,                "//": "默认值",
+    "text_editable": true,              "//": "是否允许文本输入",
+    "size": [180, 30],                  "//": "控件尺寸[宽,高]",
+    "offset": [0, 0],                   "//": "位置偏移[x,y]",
+    "anchor_from": "center",            "//": "锚点位置",
+    "anchor_to": "center",              "//": "对齐位置",
+    "layer": 1,                         "//": "渲染层级",
+    "visible": true,                    "//": "是否可见",
+    "enabled": true,                    "//": "是否启用",
+                                        
+    "//": "滑块与输入框组合,支持滑块调整和直接输入"
+  },
+  
+  "edit_box": {
+    "type": "edit_box",                 "//": "组件类型: 输入框",
+    "text": "",                         "//": "初始文本",
+    "max_length": 100,                  "//": "最大输入长度",
+    "is_password": false,               "//": "是否为密码框",
+    "placeholder": "",                  "//": "占位文本",
+    "size": [120, 30],                  "//": "输入框尺寸[宽,高]",
+    "offset": [0, 0],                   "//": "位置偏移[x,y]",
+    "anchor_from": "center",            "//": "锚点位置",
+    "anchor_to": "center",              "//": "对齐位置",
+    "layer": 1,                         "//": "渲染层级",
+    "visible": true,                    "//": "是否可见",
+    "enabled": true,                    "//": "是否启用",
+                                        
+    "//": "文本输入组件,支持单行/多行文本输入"
+  },
+  
+  "factory": {
+    "type": "factory",                  "//": "组件类型: 工厂",
+    "template_type": "label",           "//": "模板类型",
+    "item_count": 0,                    "//": "生成数量",
+    "size": [100, 100],                 "//": "工厂尺寸[宽,高]",
+    "offset": [0, 0],                   "//": "位置偏移[x,y]",
+    "anchor_from": "center",            "//": "锚点位置",
+    "anchor_to": "center",              "//": "对齐位置",
+    "layer": 0,                         "//": "渲染层级",
+    "visible": true,                    "//": "是否可见",
+                                        
+    "//": "动态组件生成器,根据模板批量创建UI元素"
+  },
+  
+  "grid": {
+    "type": "grid",                     "//": "组件类型: 网格",
+    "rows": 2,                          "//": "行数",
+    "columns": 2,                       "//": "列数",
+    "row_spacing": 2,                   "//": "行间距",
+    "column_spacing": 2,                "//": "列间距",
+    "size": [200, 200],                 "//": "网格尺寸[宽,高]",
+    "offset": [0, 0],                   "//": "位置偏移[x,y]",
+    "anchor_from": "center",            "//": "锚点位置",
+    "anchor_to": "center",              "//": "对齐位置",
+    "layer": 0,                         "//": "渲染层级",
+    "visible": true,                    "//": "是否可见",
+                                        
+    "//": "网格布局容器,按行列组织子元素"
+  },
+  
+  "scroll_view": {
+    "type": "scroll_view",              "//": "组件类型: 滚动视图",
+    "scroll_vertical": true,            "//": "允许垂直滚动",
+    "scroll_horizontal": false,         "//": "允许水平滚动",
+    "scroll_speed": 20,                 "//": "滚动速度",
+    "size": [200, 200],                 "//": "视图尺寸[宽,高]",
+    "offset": [0, 0],                   "//": "位置偏移[x,y]",
+    "anchor_from": "center",            "//": "锚点位置",
+    "anchor_to": "center",              "//": "对齐位置",
+    "layer": 0,                         "//": "渲染层级",
+    "visible": true,                    "//": "是否可见",
+                                        
+    "//": "可滚动容器,用于显示超出可视区域的内容"
+  },
+  
+  "scroll_track": {
+    "type": "scroll_track",             "//": "组件类型: 滚动轨道",
+    "orientation": "vertical",          "//": "方向: vertical/horizontal",
+    "size": [12, 200],                  "//": "轨道尺寸[宽,高]",
+    "offset": [0, 0],                   "//": "位置偏移[x,y]",
+    "anchor_from": "center",            "//": "锚点位置",
+    "anchor_to": "center",              "//": "对齐位置",
+    "layer": 1,                         "//": "渲染层级",
+    "visible": true,                    "//": "是否可见",
+                                        
+    "//": "滚动条背景轨道组件"
+  },
+  
+  "scrollbar_box": {
+    "type": "scrollbar_box",            "//": "组件类型: 滚动条",
+    "orientation": "vertical",          "//": "方向: vertical/horizontal",
+    "size": [12, 50],                   "//": "滚动条尺寸[宽,高]",
+    "offset": [0, 0],                   "//": "位置偏移[x,y]",
+    "anchor_from": "center",            "//": "锚点位置",
+    "anchor_to": "center",              "//": "对齐位置",
+    "layer": 2,                         "//": "渲染层级",
+    "visible": true,                    "//": "是否可见",
+    "enabled": true,                    "//": "是否启用",
+                                        
+    "//": "滚动条滑块组件,可拖动控制滚动位置"
+  },
+  
+  "selection_wheel": {
+    "type": "selection_wheel",          "//": "组件类型: 选择轮",
+    "options": [],                      "//": "选项列表",
+    "radius": 50,                       "//": "半径",
+    "size": [120, 120],                 "//": "组件尺寸[宽,高]",
+    "offset": [0, 0],                   "//": "位置偏移[x,y]",
+    "anchor_from": "center",            "//": "锚点位置",
+    "anchor_to": "center",              "//": "对齐位置",
+    "layer": 1,                         "//": "渲染层级",
+    "visible": true,                    "//": "是否可见",
+    "enabled": true,                    "//": "是否启用",
+                                        
+    "//": "圆形选择器组件,以轮盘形式展示选项"
+  },
+  
+  "screen": {
+    "type": "screen",                   "//": "组件类型: 屏幕",
+    "render_game_layer": true,          "//": "是否渲染游戏层",
+    "render_vignette": true,            "//": "是否渲染渐晕效果",
+    "size": [100, 100],                 "//": "屏幕尺寸[宽,高]",
+    "offset": [0, 0],                   "//": "位置偏移[x,y]",
+    "anchor_from": "top_left",          "//": "锚点位置",
+    "anchor_to": "top_left",            "//": "对齐位置",
+    "layer": -1000,                     "//": "渲染层级",
+    "visible": true,                    "//": "是否可见",
+                                        
+    "//": "顶级UI容器,通常作为UI根节点"
+  },
+  
+  "custom": {
+    "type": "custom",                   "//": "组件类型: 自定义",
+    "custom_type": "",                  "//": "自定义类型标识",
+    "size": [100, 100],                 "//": "组件尺寸[宽,高]",
+    "offset": [0, 0],                   "//": "位置偏移[x,y]",
+    "anchor_from": "center",            "//": "锚点位置",
+    "anchor_to": "center",              "//": "对齐位置",
+    "layer": 1,                         "//": "渲染层级",
+    "visible": true,                    "//": "是否可见",
+    "enabled": true,                    "//": "是否启用",
+                                        
+    "//": "自定义组件,用于实现特殊UI功能"
+  },
+  
+  "image_cycler": {
+    "type": "image_cycler",             "//": "组件类型: 图片循环器",
+    "textures": [],                     "//": "纹理路径列表",
+    "interval": 1.0,                    "//": "切换间隔(秒)",
+    "auto_cycle": false,                "//": "是否自动循环",
+    "size": [32, 32],                   "//": "组件尺寸[宽,高]",
+    "offset": [0, 0],                   "//": "位置偏移[x,y]",
+    "anchor_from": "center",            "//": "锚点位置",
+    "anchor_to": "center",              "//": "对齐位置",
+    "layer": 1,                         "//": "渲染层级",
+    "visible": true,                    "//": "是否可见",
+    "enabled": true,                    "//": "是否启用",
+                                        
+    "//": "图像切换组件,循环显示多个图像"
+  },
+  
+  "text_cycler": {
+    "type": "text_cycler",              "//": "组件类型: 文本循环器",
+    "texts": [],                        "//": "文本列表",
+    "interval": 1.0,                    "//": "切换间隔(秒)",
+    "auto_cycle": false,                "//": "是否自动循环",
+    "size": [100, 20],                  "//": "组件尺寸[宽,高]",
+    "offset": [0, 0],                   "//": "位置偏移[x,y]",
+    "anchor_from": "center",            "//": "锚点位置",
+    "anchor_to": "center",              "//": "对齐位置",
+    "layer": 1,                         "//": "渲染层级",
+    "visible": true,                    "//": "是否可见",
+    "enabled": true,                    "//": "是否启用",
+                                        
+    "//": "文本切换组件,循环显示多个文本"
+  },
+  
+  "grid_page_indicator": {
+    "type": "grid_page_indicator",      "//": "组件类型: 网格页面指示器",
+    "page_count": 1,                    "//": "总页数",
+    "current_page": 0,                  "//": "当前页",
+    "dot_size": 6,                      "//": "点大小",
+    "dot_spacing": 8,                   "//": "点间距",
+    "size": [80, 20],                   "//": "组件尺寸[宽,高]",
+    "offset": [0, 0],                   "//": "位置偏移[x,y]",
+    "anchor_from": "center",            "//": "锚点位置",
+    "anchor_to": "center",              "//": "对齐位置",
+    "layer": 1,                         "//": "渲染层级",
+    "visible": true,                    "//": "是否可见",
+    "enabled": true,                    "//": "是否启用",
+                                        
+    "//": "分页指示组件,显示当前页和总页数"
+  }
+}
